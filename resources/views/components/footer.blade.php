@@ -21,20 +21,20 @@
                 <p class="footer-title">NAVIGATION</p>
 
                 <a href="{{ route('home') }}">Accueil</a>
-                <a href="#">Services</a>
-                <a href="#">Réalisations</a>
-                <a href="#">À propos</a>
-                <a href="#">Contact</a>
+                <a href="{{ route('services') }}">Services</a>
+                <a href="{{ route('realisations') }}">Réalisations</a>
+                <a href="{{ route('about') }}">À propos</a>
+                <a href="{{ route('contact') }}">Contact</a>
             </div>
 
 
             <div class="footer-column">
                 <p class="footer-title">SERVICES</p>
 
-                <a href="#">Sites vitrines</a>
-                <a href="#">E-commerce</a>
-                <a href="#">Développement sur mesure</a>
-                <a href="#">Maintenance</a>
+                <a href="{{ route('services') }}">Sites vitrines</a>
+                <a href="{{ route('services') }}">E-commerce</a>
+                <a href="{{ route('services') }}">Développement sur mesure</a>
+                <a href="{{ route('services') }}">Maintenance</a>
             </div>
 
 

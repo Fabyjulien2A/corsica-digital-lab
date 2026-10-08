@@ -8,13 +8,13 @@
 
         <nav class="main-nav">
             <a href="{{ route('home') }}">Accueil</a>
-            <a href="#">Services</a>
-            <a href="#">Réalisations</a>
-            <a href="#">À propos</a>
-            <a href="#">Contact</a>
+            <a href="{{ route('services') }}">Services</a>
+            <a href="{{ route('realisations') }}">Réalisations</a>
+            <a href="{{ route('about') }}">À propos</a>
+            <a href="{{ route('contact') }}">Contact</a>
         </nav>
 
-        <a href="#" class="header-cta">
+        <a href="{{ route('contact') }}" class="header-cta">
             Un projet ? <span>→</span>
         </a>
 

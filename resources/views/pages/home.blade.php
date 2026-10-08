@@ -36,12 +36,12 @@
 
         <div class="hero-actions">
 
-            <a href="#" class="btn btn-primary">
+            <a href="{{ route('contact') }}" class="btn btn-primary">
                 Discuter de votre projet
                 <span>→</span>
             </a>
 
-            <a href="#" class="btn btn-outline">
+            <a href="{{ route('realisations') }}" class="btn btn-outline">
                 Voir mes réalisations
             </a>
 
@@ -80,7 +80,7 @@
                     et attirer de nouveaux clients.
                 </p>
 
-                <a href="#">
+                <a href="{{ route('services') }}">
                     Découvrir <span>→</span>
                 </a>
             </article>
@@ -95,7 +95,7 @@
                     pour développer vos ventes.
                 </p>
 
-                <a href="#">
+                <a href="{{ route('services') }}">
                     Découvrir <span>→</span>
                 </a>
             </article>
@@ -110,7 +110,7 @@
                     de votre activité.
                 </p>
 
-                <a href="#">
+                <a href="{{ route('services') }}">
                     Découvrir <span>→</span>
                 </a>
             </article>
@@ -125,7 +125,7 @@
                     performant et toujours à jour.
                 </p>
 
-                <a href="#">
+                <a href="{{ route('contact') }}">
                     Découvrir <span>→</span>
                 </a>
             </article>
@@ -151,7 +151,7 @@
                 </h2>
             </div>
 
-            <a href="#" class="projects-all">
+            <a href="{{ route('realisations') }}" class="projects-all">
                 Voir toutes les réalisations <span>→</span>
             </a>
         </div>
