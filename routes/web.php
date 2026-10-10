@@ -13,3 +13,9 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])
     ->middleware('throttle:5,1')
     ->name('contact.store');
+
+Route::view('/mentions-legales', 'pages.mentions-legales')
+    ->name('mentions-legales');
+
+Route::view('/politique-confidentialite', 'pages.confidentialite')
+    ->name('confidentialite');

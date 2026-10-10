@@ -58,8 +58,8 @@
             </p>
 
             <div>
-                <a href="#">Mentions légales</a>
-                <a href="#">Politique de confidentialité</a>
+                <a href="{{ route('mentions-legales') }}">Mentions légales</a>
+                <a href="{{ route('confidentialite') }}">Politique de confidentialité</a>
             </div>
 
         </div>

@@ -2271,3 +2271,75 @@ a {
     height: 1px;
     overflow: hidden;
 }
+
+
+
+
+/* =========================
+   PAGES LÉGALES
+========================= */
+
+.legal-page {
+    padding: 100px 0 130px;
+    background: var(--cream);
+}
+
+.legal-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.legal-content h2 {
+    margin: 55px 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    margin-bottom: 20px;
+    color: #68625d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.legal-content strong {
+    color: var(--dark);
+}
+
+.legal-content a {
+    color: var(--terracotta);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 65px 0 90px;
+    }
+
+    .legal-content h2 {
+        margin-top: 40px;
+    }
+}
+
+.legal-content ul {
+    margin: 0 0 25px;
+    padding-left: 22px;
+    color: #68625d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+}
+
+.legal-content li::marker {
+    color: var(--terracotta);
+}
