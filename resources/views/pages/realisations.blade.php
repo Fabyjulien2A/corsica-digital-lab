@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Réalisations | Corsica Digital Lab')
+@section('title', 'Réalisations web et portfolio | Corsica Digital Lab')
 
 @section(
     'description',
-    'Découvrez une sélection de sites web, boutiques en ligne et projets numériques réalisés par Corsica Digital Lab.'
+    'Découvrez les réalisations de Corsica Digital Lab : sites e-commerce, applications Laravel, projets web sur mesure et prototypes de sites vitrines en Corse.'
 )
 
 @section('content')
@@ -69,7 +69,7 @@
                         <span>E-commerce</span>
                     </div>
 
-                    <a href="#" class="portfolio-link">
+                    <a href="https://lemonchiffon-skunk-139014.hostingersite.com/" class="portfolio-link"  target="_blank" rel="noopener noreferrer">
                         Découvrir le projet <span>→</span>
                     </a>
                 </div>
@@ -118,7 +118,7 @@
                 <span>Responsive</span>
             </div>
 
-            <a href="#" class="portfolio-link">
+            <a href="https://www.simpledevis.online/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
                 Découvrir le projet <span>→</span>
             </a>
 

@@ -1,9 +1,11 @@
-
 @extends('layouts.app')
 
-@section('title', 'Contact | Corsica Digital Lab')
+@section('title', 'Contactez votre développeur web en Corse | Corsica Digital Lab')
 
-@section('description', 'Contactez Corsica Digital Lab pour votre projet de site vitrine, e-commerce ou développement web sur mesure en Corse.')
+@section(
+    'description',
+    'Un projet de site internet, de boutique e-commerce ou de développement sur mesure ? Contactez Corsica Digital Lab, développeur web indépendant en Corse.'
+)
 
 @section('content')
 

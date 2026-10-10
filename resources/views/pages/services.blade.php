@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Services | Corsica Digital Lab')
+@section('title', 'Création de sites web et services numériques en Corse | Corsica Digital Lab')
 
 @section(
     'description',
-    'Création de sites vitrines, boutiques e-commerce, développement web sur mesure et maintenance pour les professionnels.'
+    'Création de sites vitrines, boutiques e-commerce, développement Laravel et maintenance web en Corse. Des solutions adaptées aux artisans, TPE et PME.'
 )
 
 @section('content')
