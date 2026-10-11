@@ -327,7 +327,7 @@
                 adaptée à votre activité.
             </p>
 
-            <a href="#" class="final-cta-button">
+            <a href="{{ route('contact')  }}" class="final-cta-button">
                 Parler de mon projet
                 <span>→</span>
             </a>

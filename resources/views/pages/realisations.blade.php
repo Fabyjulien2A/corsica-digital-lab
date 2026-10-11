@@ -203,5 +203,3 @@
 
     </div>
 </section>
-
-@endsections
