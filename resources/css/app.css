@@ -749,9 +749,29 @@ a {
     transition: transform .6s ease;
 }
 
+/* Images VTC et Plomberie */
+
 .project-card:hover .project-image img {
     transform: scale(1.025);
 }
+
+/* Images VTC et Plomberie uniquement */
+
+.project-card:not(.project-card-large) .project-image {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: transparent;
+}
+
+.project-card:not(.project-card-large) .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
 
 
 /* BADGE */
@@ -1815,22 +1835,15 @@ a {
 
 .portfolio-card-image {
     position: relative;
-
-    aspect-ratio: 16 / 10;
-
     overflow: hidden;
     border-radius: 13px;
-
     background: #ddd;
 }
 
 .portfolio-card-image img {
     width: 100%;
-    height: 100%;
-
+    height: auto;
     display: block;
-    object-fit: cover;
-
     transition: transform .5s ease;
 }
 

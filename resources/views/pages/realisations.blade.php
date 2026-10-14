@@ -150,7 +150,7 @@
 
                 <div class="portfolio-card-image">
                     <img
-                        src="{{ asset('images/vtc-corse.jpg') }}"
+                        src="{{ asset('images/realisations/vtc-corse.jpg') }}"
                         alt="Prototype de site pour chauffeur VTC"
                     >
 
@@ -177,7 +177,7 @@
 
                 <div class="portfolio-card-image">
                     <img
-                        src="{{ asset('images/corsica-plomberie.jpg') }}"
+                        src="{{ asset('images/realisations/plomberie.jpg') }}"
                         alt="Prototype de site pour artisan plombier"
                     >
 
