@@ -2,9 +2,12 @@
     <div class="container header-inner">
 
         <a href="{{ route('home') }}" class="brand">
-            <span class="brand-logo">CDL</span>
-            <span class="brand-name">CORSICA DIGITAL LAB</span>
-        </a>
+    <img
+        src="{{ asset('images/logo-cdl.png') }}"
+        alt="Corsica Digital Lab"
+        class="brand-image"
+    >
+</a>
 
         <nav class="main-nav" id="main-navigation" aria-label="Navigation principale">
             <a href="{{ route('home') }}">Accueil</a>

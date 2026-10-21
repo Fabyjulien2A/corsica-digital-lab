@@ -268,10 +268,12 @@
 
             <div class="about-visual">
                 <div class="about-monogram">
-                    <span>CDL</span>
-                    <small>CORSICA DIGITAL LAB</small>
-                </div>
-
+    <img
+        src="{{ asset('images/logo-cdl.png') }}"
+        alt="Corsica Digital Lab"
+        class="about-logo-img"
+    >
+</div>
                 <p>CRÉATION WEB<br>& SOLUTIONS NUMÉRIQUES</p>
             </div>
 

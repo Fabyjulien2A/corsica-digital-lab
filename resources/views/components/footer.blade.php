@@ -6,9 +6,12 @@
 
             <div class="footer-brand">
                 <a href="{{ route('home') }}" class="footer-logo">
-                    <strong>CDL</strong>
-                    <span>CORSICA DIGITAL LAB</span>
-                </a>
+    <img
+        src="{{ asset('images/logo-cdl.png') }}"
+        alt="Corsica Digital Lab"
+        class="footer-logo-img"
+    >
+</a>
 
                 <p>
                     Création web & solutions numériques<br>
