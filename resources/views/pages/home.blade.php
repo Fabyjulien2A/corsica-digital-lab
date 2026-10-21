@@ -177,7 +177,7 @@
                         </p>
                     </div>
 
-                    <span class="project-arrow">↗</span>
+                    <a href="https://lemonchiffon-skunk-139014.hostingersite.com/" class="project-arrow" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet"> ↗</a>
                 </div>
 
             </article>
@@ -202,7 +202,8 @@
                         </p>
                     </div>
 
-                    <span class="project-arrow">↗</span>
+                    <a href="https://steelblue-raccoon-308998.hostingersite.com/" class="project-arrow" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet"> ↗</a>
+
                 </div>
 
             </article>
@@ -227,7 +228,7 @@
                         </p>
                     </div>
 
-                    <span class="project-arrow">↗</span>
+                    <a href="https://darkorchid-loris-263611.hostingersite.com/" class="project-arrow" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet">↗</a> 
                 </div>
 
             </article>
