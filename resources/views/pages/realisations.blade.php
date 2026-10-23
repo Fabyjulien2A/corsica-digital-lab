@@ -208,6 +208,39 @@
 
             </article>
 
+
+
+                        <article class="portfolio-card">
+
+                <div class="portfolio-card-image">
+                    <img
+                        src="{{ asset('images/realisations/azura-villa.jpg') }}"
+                        alt="Prototype de site pour artisan plombier"
+                    >
+
+                    <span class="portfolio-badge">
+                        PROTOTYPE
+                    </span>
+                </div>
+
+                <div class="portfolio-card-content">
+                    <p>SITE VITRINE</p>
+
+                    <h3>Corsica Plomberie</h3>
+
+                    <span>
+                        Concept de site vitrine pensé pour présenter
+                        simplement les services d'un artisan local.
+                    </span>
+                </div>
+
+                
+                            <a href="https://white-pheasant-321003.hostingersite.com/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                Découvrir le prototype <span>→</span>
+            </a>
+
+            </article>
+
         </div>
 
     </div>
