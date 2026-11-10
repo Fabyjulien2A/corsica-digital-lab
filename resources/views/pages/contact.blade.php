@@ -221,10 +221,15 @@
                     >{{ old('message') }}</textarea>
                 </div>
 
-                <button type="submit" class="contact-submit">
-                    Envoyer ma demande
-                    <span>→</span>
-                </button>
+                {{-- Protection anti-spam Cloudflare Turnstile --}}
+<div class="cf-turnstile"
+     data-sitekey="{{ config('services.turnstile.site_key') }}">
+</div>
+
+<button type="submit" class="contact-submit">
+    Envoyer ma demande
+    <span>→</span>
+</button>
 
                 <p class="contact-form-note">
                     Les informations transmises seront utilisées
@@ -232,6 +237,9 @@
                 </p>
 
             </form>
+
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        async defer></script>
 
         </div>
 

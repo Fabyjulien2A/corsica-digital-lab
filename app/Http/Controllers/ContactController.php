@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactMessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Http;
 use Throwable;
 
 class ContactController extends Controller
@@ -20,11 +21,43 @@ class ContactController extends Controller
             ],
             'message' => ['required', 'string', 'max:5000'],
             'website' => ['nullable', 'max:0'],
+            'cf-turnstile-response' => ['required', 'string'],
         ]);
 
         // Champ anti-spam : ne pas traiter les demandes des robots.
         if (!empty($validated['website'])) {
             return redirect()->route('contact');
+        }
+
+        // Vérification du CAPTCHA Cloudflare Turnstile
+        try {
+            $response = Http::timeout(5)->asForm()->post(
+                'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+                [
+                    'secret' => config('services.turnstile.secret_key'),
+                    'response' => $validated['cf-turnstile-response'],
+                    'remoteip' => $request->ip(),
+                ]
+            );
+
+            if (
+                !$response->successful() ||
+                $response->json('success') !== true
+            ) {
+                return back()
+                    ->withInput($request->except('website', 'cf-turnstile-response'))
+                    ->withErrors([
+                        'turnstile' => 'La vérification de sécurité a échoué. Veuillez réessayer.'
+                    ]);
+            }
+        } catch (Throwable $e) {
+            report($e);
+
+            return back()
+                ->withInput($request->except('website', 'cf-turnstile-response'))
+                ->withErrors([
+                    'turnstile' => 'La vérification de sécurité est momentanément indisponible.'
+                ]);
         }
 
         try {
